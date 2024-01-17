@@ -11,29 +11,27 @@ import static org.junit.Assert.assertEquals;
 
 public class IngredientTest {
 
-
-
     @Test
     public void getPriceTest() {
-        Ingredient ingredient = new Ingredient(Constants.typeIngredient, Constants.nameIngredient, Constants.priceIngredient);
+        Ingredient ingredient = new Ingredient(Constants.TYPE_INGREDIENT, Constants.NAME_INGREDIENT, Constants.PRICE_INGREDIENT);
         Float actualResult = ingredient.getPrice();
-        Float expectedResult = Constants.priceIngredient;
+        Float expectedResult = Constants.PRICE_INGREDIENT;
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void getNameTest() {
-        Ingredient ingredient = new Ingredient(Constants.typeIngredient, Constants.nameIngredient, Constants.priceIngredient);
+        Ingredient ingredient = new Ingredient(Constants.TYPE_INGREDIENT, Constants.NAME_INGREDIENT, Constants.PRICE_INGREDIENT);
         String actualResult = ingredient.getName();
-        String expectedResult = Constants.nameIngredient;
+        String expectedResult = Constants.NAME_INGREDIENT;
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void getTypeTest() {
-        Ingredient ingredient = new Ingredient(Constants.typeIngredient, Constants.nameIngredient, Constants.priceIngredient);
+        Ingredient ingredient = new Ingredient(Constants.TYPE_INGREDIENT, Constants.NAME_INGREDIENT, Constants.PRICE_INGREDIENT);
         IngredientType actualResult = ingredient.getType();
-        IngredientType expectedResult = Constants.typeIngredient;
+        IngredientType expectedResult = Constants.TYPE_INGREDIENT;
         assertEquals(expectedResult, actualResult);
     }
 }

@@ -11,21 +11,19 @@ import static org.junit.Assert.assertEquals;
 
 public class BunTest {
 
-
-
     @Test
     public void getNameTest() {
-        Bun bun = new Bun(Constants.nameBun, Constants.priceBun);
+        Bun bun = new Bun(Constants.NAME_BUN, Constants.PRICE_BUN);
         String actualResult = bun.getName();
-        String expectedResult = Constants.nameBun;
+        String expectedResult = Constants.NAME_BUN;
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void getPriceTest() {
-        Bun bun = new Bun(Constants.nameBun, Constants.priceBun);
+        Bun bun = new Bun(Constants.NAME_BUN, Constants.PRICE_BUN);
         Float actualResult = bun.getPrice();
-        Float expectedResult = Constants.priceBun;
+        Float expectedResult = Constants.PRICE_BUN;
         assertEquals(expectedResult, actualResult);
     }
 

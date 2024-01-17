@@ -2,12 +2,12 @@ package praktikum;
 
 public class Constants {
 
-    public static String nameBun = "Хлеб";
-    public static Float priceBun = 10.5f;
+    public static final String NAME_BUN = "Хлеб";
+    public static final Float PRICE_BUN = 10.5f;
 
-    public static IngredientType typeIngredient = IngredientType.SAUCE;
-    public static IngredientType typeSecondIngredient = IngredientType.FILLING;
-    public static String nameIngredient = "Горчица";
-    public static Float priceIngredient = 5.5f;
+    public static final IngredientType TYPE_INGREDIENT = IngredientType.SAUCE;
+    public static final IngredientType SECOND_TYPE_INGREDIENT = IngredientType.FILLING;
+    public static final String NAME_INGREDIENT = "Горчица";
+    public static final Float PRICE_INGREDIENT = 5.5f;
 
 }
